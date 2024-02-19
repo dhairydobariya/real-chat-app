@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 72px;
+    background-color: #128C7E;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar img {
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#chats {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 72px);
+    overflow: hidden;
+}
+
+#chat-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 15px;
+    background-color: #25D366;
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #128C7E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-messages {
+    padding: 15px;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.chat-messages .message{
+    padding: 20px 15px;
+    float: right;
+    clear: both;
+    background-color: #25D366;
+    border-radius: 25px;
+}
+.chat-messages .left{
+    float: left;
+    clear: both;
+}
+.chat-messages .right{
+    float: right;
+    clear: both;
+}
+.chat-input {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-top: 1px solid #128C7E;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 1300px;
+}
+
+#send-button {
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+}
